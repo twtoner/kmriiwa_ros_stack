@@ -1,4 +1,7 @@
 # KMRIIWA_ROS_STACK
+
+__Updated by Tyler Toner in February 2023 to include gripper support.__
+
 This metapackage enables to use and control the KMRIIWA robot using ROS. It provides packages for robot's navigation, manipulation, visualisation and simulation. A brief description of thsee packages and a usage guide follows. 
 
 **Note that this package depends on the [kmriiwa_ros_java driver](https://github.com/stoic-roboticist/kmriiwa_ros_java) to be running on the robot for its control.**
