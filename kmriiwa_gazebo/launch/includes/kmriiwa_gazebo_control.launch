@@ -3,7 +3,7 @@
     
     <!-- Launches the controllers according to the hardware interface selected -->
     <arg name="robot_name" default="kmriiwa" />
-    <arg name="controllers" default="joint_state_controller manipulator_controller"/>
+    <arg name="controllers" default="joint_state_controller manipulator_controller endeffector_controller"/>
     <arg name="hardware_interface" default="PositionJointInterface"/>
     <arg name="robot_extras" default="$(find kmriiwa_description)/urdf/robot/empty.xacro"/>
     <arg name="joint_state_frequency" default="20" />

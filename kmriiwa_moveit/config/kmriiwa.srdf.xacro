@@ -15,7 +15,8 @@
         <chain base_link="$(arg robot_name)_link_0" tip_link="$(arg robot_name)_link_ee"/>
     </group>
     <group name="$(arg robot_name)_endeffector">
-        <link name="$(arg robot_name)_link_ee"/>
+        <joint name="Slider01"/>
+        <joint name="Slider02"/>
     </group>
     <!--GROUP STATES: Purpose: Define a named state for a particular group, in terms of joint values. This is useful to define states like 'folded arms'-->
     <group_state name="home" group="$(arg robot_name)_manipulator">
@@ -35,6 +36,14 @@
         <joint name="$(arg robot_name)_joint_5" value="-0.0139"/>
         <joint name="$(arg robot_name)_joint_6" value="0.8827"/>
         <joint name="$(arg robot_name)_joint_7" value="0.662003"/>
+    </group_state>
+    <group_state name="open" group="kmriiwa_endeffector">
+        <joint name="Slider01" value="-0.021"/>
+        <joint name="Slider02" value="0.021"/>
+    </group_state>
+    <group_state name="closed" group="kmriiwa_endeffector">
+        <joint name="Slider01" value="0"/>
+        <joint name="Slider02" value="0"/>
     </group_state>
     <xacro:unless value="$(arg no_virtual_joint)">
         <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->

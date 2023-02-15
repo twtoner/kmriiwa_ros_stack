@@ -5,10 +5,12 @@
 <transmission name="Slider01_tran">
   <type>transmission_interface/SimpleTransmission</type>
   <joint name="Slider01">
-    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <!-- <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface> -->
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
   </joint>
   <actuator name="Slider01_actr">
-    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <!-- <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface> -->
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
@@ -16,10 +18,12 @@
 <transmission name="Slider02_tran">
   <type>transmission_interface/SimpleTransmission</type>
   <joint name="Slider02">
-    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <!-- <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface> -->
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
   </joint>
   <actuator name="Slider02_actr">
-    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <!-- <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface> -->
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>

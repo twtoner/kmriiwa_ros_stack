@@ -16,8 +16,8 @@ hardware_interface:
     - $(arg robot_name)_joint_5
     - $(arg robot_name)_joint_6
     - $(arg robot_name)_joint_7
-    - Slider01
-    - Slider02
+    # - Slider01
+    # - Slider02
     
   sim_control_mode: 1  # 0: position, 1: velocity
 # Publish all joint states
@@ -43,6 +43,7 @@ controller_list:
   - name: /$(arg robot_name)/arm/endeffector_controller
     action_ns: follow_joint_trajectory
     default: True
+    # type: effort_controllers/JointTrajectoryController
     type: FollowJointTrajectory
     joints:
       - Slider01

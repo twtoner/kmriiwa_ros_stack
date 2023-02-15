@@ -22,3 +22,16 @@
     state_publish_rate:  25            # Override default
     action_monitor_rate: 30            # Override default
     stop_trajectory_duration: 0        # Override default
+
+  endeffector_controller:
+    type: position_controllers/JointTrajectoryController
+    joints: 
+      - Slider01
+      - Slider02
+
+    constraints:
+      goal_time: 0.5                   # Override default
+
+    state_publish_rate:  25            # Override default
+    action_monitor_rate: 30            # Override default
+    stop_trajectory_duration: 0        # Override default

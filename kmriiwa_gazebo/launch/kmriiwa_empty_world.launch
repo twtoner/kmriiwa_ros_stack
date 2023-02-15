@@ -3,7 +3,7 @@
 
   <arg name="robot_name" default="kmriiwa" />
   <arg name="hardware_interface" default="PositionJointInterface"/>
-  <arg name="controllers" default="joint_state_controller manipulator_controller"/>
+  <arg name="controllers" default="joint_state_controller manipulator_controller endeffector_controller"/>
   <arg name="use_sim_time" default="true"/>
   <arg name="debug" default="false"/>
   <arg name="verbose" default="false" />
