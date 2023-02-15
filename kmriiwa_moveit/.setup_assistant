@@ -6,6 +6,6 @@ moveit_setup_assistant_config:
   SRDF:
     relative_path: config/kmriiwa.srdf
   CONFIG:
-    author_name: Hatem Fakhruldeen
-    author_email: hatem.fakhruldeen@gmail.com
-    generated_timestamp: 1619447595
+    author_name: Tyler Toner
+    author_email: twtoner@umich.edu
+    generated_timestamp: 1676468630
