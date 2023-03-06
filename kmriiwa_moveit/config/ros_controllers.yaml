@@ -27,7 +27,8 @@ joint_state_controller:
   publish_rate: 50
 
 controller_list:
-  - name: /$(arg robot_name)/arm/manipulator_controller
+  # - name: /$(arg robot_name)/arm/manipulator_controller
+  - name: /$(arg robot_name)/manipulator_controller
     action_ns: follow_joint_trajectory
     default: True
     type: FollowJointTrajectory
@@ -40,7 +41,8 @@ controller_list:
       - $(arg robot_name)_joint_6
       - $(arg robot_name)_joint_7
 
-  - name: /$(arg robot_name)/arm/endeffector_controller
+  # - name: /$(arg robot_name)/arm/endeffector_controller
+  - name: /$(arg robot_name)/endeffector_controller
     action_ns: follow_joint_trajectory
     default: True
     type: FollowJointTrajectory

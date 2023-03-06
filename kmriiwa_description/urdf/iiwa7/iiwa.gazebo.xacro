@@ -21,7 +21,8 @@
     <!-- Load Gazebo lib and set the robot namespace -->
     <gazebo>
       <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
-        <robotNamespace>/${robot_name}/arm</robotNamespace>
+        <!-- <robotNamespace>/${robot_name}/arm</robotNamespace> -->
+        <robotNamespace>/${robot_name}/</robotNamespace>
         <robotParam>/${robot_name}/robot_description</robotParam>
       </plugin>
     </gazebo>
@@ -86,4 +87,3 @@
   </xacro:macro>
 
 </robot>
-
