@@ -33,7 +33,7 @@ catkin_package(
 link_directories(
   ${GAZEBO_LIBRARY_DIRS}
 )
-include_directories(
+include_directories(include
   ${Boost_INCLUDE_DIR}  
   ${catkin_INCLUDE_DIRS}
   ${GAZEBO_INCLUDE_DIRS}
@@ -43,7 +43,13 @@ add_library(${PROJECT_NAME}
   src/kmriiwa_plugin.cpp
 )
 
-target_link_libraries(${PROJECT_NAME}
+# add_library(gazebo_ros_moveit_planning_scene
+#   src/gazebo_ros_moveit_planning_scene.cpp
+# )
+
+
+target_link_libraries(
+  ${PROJECT_NAME}
   ${catkin_LIBRARIES}
   ${GAZEBO_LIBRARIES}
 )
