@@ -46,15 +46,12 @@ namespace gazebo
 /// @addtogroup gazebo_dynamic_plugins Gazebo ROS Dynamic Plugins
 /// @{
 /** \defgroup GazeboRosMoveItPlanningScene Plugin XML Reference and Example
-
   \brief Ros MoveIt Planning Scene Plugin.
   
   This is a model plugin which broadcasts MoveIt PlanningScene messages so
   that the planning scene stays up-to-date with the world simulation.  This is
   useful if you want to "fake" perfect perception of the environment.
-
   Example Usage:
-
   \verbatim
       <gazebo>
         <plugin filename="libgazebo_ros_moveit_planning_scene.so" name="gazebo_ros_moveit_planning_scene">
@@ -65,19 +62,15 @@ namespace gazebo
         </plugin>
       </gazebo>
   \endverbatim
-
   Design:
-
   Note that while this is a _model_ plugin, its primary purpose is to advertize
   information about the gazebo world. It's designed as a model plugin, however,
   since that information is relevant to the context of a single robot's planner.
   As such, this plugin should be loaded in the model representing the robot
   performing the planning.
-
   At some period specified by <updatePeriod>, the plugin will publish the
   complete world state. If this period is 0, then periodic messages will not be
   published.
-
   You can manually re-synch the world state by calling the publish_planning_scene
   service.
 \{
@@ -98,7 +91,7 @@ class GazeboRosMoveItPlanningScene : public ModelPlugin
 
   // Documentation inherited
   protected: void Load(physics::ModelPtr _model, sdf::ElementPtr _sdf);
-
+ 
   // Documentation inherited
   protected: virtual void UpdateCB();
 

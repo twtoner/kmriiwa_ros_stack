@@ -4,6 +4,7 @@ project(kmriiwa_gazebo)
 include(CheckCXXCompilerFlag)
 CHECK_CXX_COMPILER_FLAG("-std=c++11" COMPILER_SUPPORTS_CXX11)
 CHECK_CXX_COMPILER_FLAG("-std=c++0x" COMPILER_SUPPORTS_CXX0X)
+add_compile_options(-std=c++17) # why does this work?
 if(COMPILER_SUPPORTS_CXX11)
     set(CMAKE_CXX_FLAGS "-std=c++11")
 elseif(COMPILER_SUPPORTS_CXX0X)
@@ -43,9 +44,9 @@ add_library(${PROJECT_NAME}
   src/kmriiwa_plugin.cpp
 )
 
-# add_library(gazebo_ros_moveit_planning_scene
-#   src/gazebo_ros_moveit_planning_scene.cpp
-# )
+add_library(gazebo_ros_moveit_planning_scene
+  src/gazebo_ros_moveit_planning_scene.cpp
+)
 
 
 target_link_libraries(
