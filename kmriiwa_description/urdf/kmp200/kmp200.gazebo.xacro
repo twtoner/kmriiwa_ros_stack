@@ -50,7 +50,7 @@
     <gazebo reference="${robot_name}_laser_B1_link">
         <sensor name="sensor_B1" type="ray">
             <always_on>true</always_on>
-            <visualize>true</visualize>
+            <visualize>false</visualize>
             <update_rate>10</update_rate>
             <ray>
                 <scan>
@@ -84,7 +84,7 @@
     <gazebo reference="${robot_name}_laser_B4_link">
         <sensor name="sensor_B4" type="ray">
             <always_on>true</always_on>
-            <visualize>true</visualize>
+            <visualize>false</visualize>
             <update_rate>10</update_rate>
             <ray>
                 <scan>
