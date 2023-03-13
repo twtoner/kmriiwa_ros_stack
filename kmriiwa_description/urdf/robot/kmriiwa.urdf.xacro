@@ -20,7 +20,7 @@
   <xacro:property name="flange_origin_rpy" value="0 0 ${arm_base_flange_yew}"/>
 
   <xacro:arg name="robot_name" default="kmriiwa"/>
-  <xacro:arg name="hardware_interface" default="EffortJointInterface"/>
+  <!-- <xacro:arg name="hardware_interface" default="EffortJointInterface"/> -->
   <xacro:arg name="robot_extras" default="$(find kmriiwa_description)/urdf/robot/empty.xacro" />
 
   <!--kmp200-->
@@ -57,7 +57,6 @@
 
   <!-- Optional custom includes such as grippers, sensors, etc... -->
   <xacro:include filename="$(arg robot_extras)"/>
-
 
   <!-- gripper -->
   <xacro:gripkit_cr_plus_l_bb />
