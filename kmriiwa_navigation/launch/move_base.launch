@@ -33,7 +33,7 @@
       
       <!-- local costmap -->
       <rosparam file="$(find kmriiwa_navigation)/config/local_costmap.yaml" command="load" subst_value="true">$(arg robot_name)</rosparam> 
-      
+
       <remap from="cmd_vel" to="/$(arg robot_name)/base/command/cmd_vel" />
     </node>
   </group>
